@@ -1,0 +1,25 @@
+# Build output
+target/
+*.class
+
+# Codex/local agent workspace
+.codex/
+.agents/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and local environment files
+*.log
+.env
+.env.*
+help.txt

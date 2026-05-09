@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             version="3.0">
+
+    <persistence-unit name="hospitalPU">
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>com.proyectohospital.entities.Estudiante</class>
+
+        <class>com.proyectohospital.entities.DatosPersonales</class>
+        <class>com.proyectohospital.entities.Convivencia</class>
+        <class>com.proyectohospital.entities.Contacto</class>
+        <class>com.proyectohospital.entities.InformacionFamiliar</class>
+        <class>com.proyectohospital.entities.InformacionPersonalAdicional</class>
+        <class>com.proyectohospital.entities.RepresentanteLegal</class>
+        <class>com.proyectohospital.entities.Salud</class>
+        <class>com.proyectohospital.entities.Programa</class>
+        <class>com.proyectohospital.entities.DatosAcademicos</class>
+
+        <class>com.proyectohospital.entities.Universidad</class>
+        <class>com.proyectohospital.entities.Especialidad</class>
+        <class>com.proyectohospital.entities.Docente</class>
+        <class>com.proyectohospital.entities.Servicio</class>
+        <class>com.proyectohospital.entities.Tutor</class>
+        <class>com.proyectohospital.entities.TipoTutor</class>
+
+        <class>com.proyectohospital.entities.Programacion</class>
+        <class>com.proyectohospital.entities.ProgramacionDetalle</class>
+        <class>com.proyectohospital.entities.Horario</class>
+        <class>com.proyectohospital.entities.CapacidadPractica</class>
+        <class>com.proyectohospital.entities.Acceso</class>
+        <class>com.proyectohospital.entities.RegistroIngreso</class>
+
+        <class>com.proyectohospital.entities.TipoDocumento</class>
+        <class>com.proyectohospital.entities.DocumentoEstudiante</class>
+        <class>com.proyectohospital.entities.Vacuna</class>
+        <class>com.proyectohospital.entities.EstudianteVacuna</class>
+        <class>com.proyectohospital.entities.EstadoAcceso</class>
+        <class>com.proyectohospital.entities.EstadoDocumento</class>
+        <class>com.proyectohospital.entities.EstadoVacuna</class>
+
+        <properties>
+
+            <!-- Conexion MySQL -->
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/proyecto_hospital"/>
+
+            <property name="jakarta.persistence.jdbc.user"
+                      value="root"/>
+
+            <property name="jakarta.persistence.jdbc.password"
+                      value=""/>
+
+            <!-- Hibernate -->
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.MySQLDialect"/>
+
+            <property name="hibernate.hbm2ddl.auto"
+                      value="update"/>
+
+            <property name="hibernate.show_sql"
+                      value="true"/>
+
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
